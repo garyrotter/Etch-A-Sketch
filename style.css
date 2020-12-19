@@ -1,0 +1,113 @@
+:root {
+    --grid-rows: 1;
+    --grid-cols: 1;
+    --active;
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient(35deg, white, rgb(88, 88, 88));
+    margin: 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+
+}
+
+.nav {
+    display: block;
+    font-size: 2rem;
+}
+
+.nav h1 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.nav p {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#light-dark {
+    display: flex;
+    flex-direction: column;
+}
+#gridsizes {
+    display: flex;
+    flex-direction: row;
+}
+
+#white-black {
+    display: flex;
+    flex-direction: column;
+}
+
+#etch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#grid {
+    display: grid;
+    grid-gap: 0;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    background-color: white;
+    margin-top: 20px;
+}
+
+.grid {
+    /* margin-top: 25px; */
+    width: 50vh;
+    height: 50vh;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+
+.grid-item {
+    padding: auto;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: grey;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+/* GRID BUTTONS */
+
+.active {
+    border: 1px solid red;
+}
